@@ -1,0 +1,164 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    background-color: #EDF2F8;
+}
+
+h2  {
+    margin: 0px 32px 16px 32px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+}
+
+p {
+    margin: 0px 32px 32px 32px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+img {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #998AA2;
+    border-radius: 28px;
+}
+
+.wrapper {
+    width: 327px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 24px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.3);
+}
+
+.item-1 {
+    background-color: #733FC8;
+}
+
+.item-2 {
+    background-color: #49556B;
+}
+
+.item-3 {
+    background-color: #FFFFFF;
+}
+
+.item-3 h2, .item-5 h2 {
+    color: #434955;
+}
+
+.item-3 p, .item-5 p {
+    color: rgba(67, 73, 85, 0.5);
+}
+
+.item-4 {
+    background-color: #18202D;
+}
+
+.item-5 {
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+}
+
+.author {
+    display: flex;
+    margin: 24px 30px;
+}
+
+.author h2 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 13px;
+}
+
+.item .author p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 11px;
+}
+
+.name {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media 
+    only screen 
+    and (min-width: 1120px) {
+
+        .wrapper {
+            height: 572px;
+            width: 1110px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+        }
+        
+        .container {
+            width: 825px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: start;
+        }
+        
+        .item {
+            width: 255px;
+        }
+        
+        .item-3, .item-4 {
+            margin-bottom: 0;
+        }
+
+        .item-3 p, .item-4 p {
+            margin-bottom: 18px;
+        }
+        
+        .item-1, .item-4 {
+            flex-basis: 540px;
+        }
+
+        .item-5 p {
+            margin-bottom: 19px;
+            line-height: 17.5px;
+        }
+    }
